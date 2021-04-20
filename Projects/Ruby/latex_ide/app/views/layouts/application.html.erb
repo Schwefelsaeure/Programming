@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LaTeX IDE: <%= @title || "Unnamed" %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><%= link_to "LaTeX IDE", root_path %></h1>
+    </div>
+    <div id="content">
+      <% if user_signed_in? %>
+        <p><%= link_to t("links.sign_out_user"), logout_path, method: :delete %></p>
+      <% end %>
+      <% if flash[:notice] %>
+        <p class="notice"><%= notice %></p>
+      <% end %>
+      <% if flash[:alert] %>
+        <p class="alert"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <p>Enjoy LaTeX - Everywhere!</p>
+      <p><%= Time.new.year %></p>
+    </div>
+  </div>
+
+</body>
+</html>

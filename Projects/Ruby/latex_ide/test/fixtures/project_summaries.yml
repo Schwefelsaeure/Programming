@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  log: MyString
+  pdf: MyString
+
+two:
+  log: MyString
+  pdf: MyString

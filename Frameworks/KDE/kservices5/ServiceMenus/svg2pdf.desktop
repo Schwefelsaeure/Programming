@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+Icon=image-svg+xml
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/svg+xml
+Actions=rsvg_convert;
+Encoding=UTF-8
+
+[Desktop Action rsvg_convert]
+Name=svg2pdf
+Name[de]=svg2pdf
+Icon=image-svg+xml
+Exec=rsvg-convert -f pdf -o %f.pdf %f

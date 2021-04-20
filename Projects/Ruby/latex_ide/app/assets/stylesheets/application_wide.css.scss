@@ -1,0 +1,75 @@
+// Place all the styles related to the bookmarks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$bright_blue: #bbddfd;
+$bright_green: #bcfdbf;
+$bright_red: #fdbcd3;
+$bright_gray: #d0d0d0;
+$dark_blue: #4f5ca2;
+$dark_green: #4fa251;
+$dark_red: #a24f4f;
+$white: #ffffff;
+
+* {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-color: $white;
+}
+label {
+	display: block;
+}
+input {
+	margin: 0.5em 0;
+}
+input[type="submit"] {
+	margin-top: 2em;
+}
+.field_with_errors {
+	background-color: $bright_red;
+}
+.notice {
+	border: 1px solid $dark_green;
+	color: $dark_green;
+	background-color: $bright_green;
+}
+.alert {
+	border: 1px solid $dark_red;
+	color: $dark_red;
+	background-color: $bright_red;
+}
+#container {
+	width: 100%;
+	margin: 0 auto;
+}
+#header {
+	background-color: $bright_blue;
+	padding: 10px;
+	color: $white;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+	}
+	a:visited, a:hover, a:active {
+		color: $white;
+	}
+}
+#content {
+	border-top: 2px solid $dark_blue;
+	padding: 10px;
+	background-color: $white;
+	min-height: 200px;
+
+	h2 {
+		font-size: 1.1em;
+		margin-bottom: 0.5em;
+	}
+}
+#footer {
+	text-align: center;
+}

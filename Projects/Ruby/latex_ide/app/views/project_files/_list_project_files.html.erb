@@ -1,0 +1,16 @@
+<% project.project_files.each do |file| %>
+  <ul>
+    <li>
+    <% if file.is_text_file? %>
+      <%= link_to file.name, edit_file_in_ide_path(project: project.id, file: file.id) %>
+    <% else %>
+      <%= file.name %>
+    <% end %>
+    <%= link_to t("links.edit_project_file"), edit_project_file_path(project: project.id, file: file.id) %>
+    <%= link_to t("links.delete_project_file"), delete_project_file_path(project: project.id, file: file.id),
+      confirm: t("messages.confirm_delete"),
+      method: :delete  %>
+      </li>
+    </ul>
+  <% end %>
+  <%= render "/project_files/upload_file", project_id: project.id %>

@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[parthreshold=true]{csquotes}
+% Use csquotes' "\blockquote" for ALL quotations and format them italics.
+% Longer quotes are mapped to the "quote" environment  (note: "\AtBeginEnvironment" is defined in package "etoolbox"). Short quotes are defined as \newcommand{\mkblockquote}[4]{#1#2\mkcitation#3}.
+\AtBeginEnvironment{quote}{\itshape}
+\renewcommand*{\mkcitation}[1]{\textnormal{ (#1)}}
+\newcommand{\q}[2][]{\textit{\blockquote[#1]{#2}}}
+% \textquote[{\cite[67]{doe90}}]{...}
+
+\begin{document}
+    \blockquote{My quote!}
+    
+    \blockquote[with citation]{My quote}
+    
+    \q{My quote!}
+    
+    \q[test]{My quote!}
+    
+    \q[test]{My\\quote!}
+\end{document}

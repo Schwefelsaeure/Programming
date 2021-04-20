@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+Icon=/usr/share/git-gui/lib/git-gui.ico
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=open_gitk;
+Encoding=UTF-8
+
+[Desktop Action open_gitk]
+Name=Open Git Log
+Name[de]=Git Log öffnen
+Icon=/usr/share/git-gui/lib/git-gui.ico
+Exec=cd %f && gitk --all

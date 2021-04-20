@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1617356119954" clover="3.2.0">
+  <project timestamp="1617356119954" name="All files">
+    <metrics statements="44" coveredstatements="38" conditionals="16" coveredconditionals="15" methods="9" coveredmethods="8" elements="69" coveredelements="61" complexity="0" loc="44" ncloc="44" packages="1" files="1" classes="1"/>
+    <file name="LinkedList.js" path="/home/benedikt/Downloads/LinkedList/LinkedList.js">
+      <metrics statements="44" coveredstatements="38" conditionals="16" coveredconditionals="15" methods="9" coveredmethods="8"/>
+      <line num="3" count="15" type="stmt"/>
+      <line num="4" count="15" type="stmt"/>
+      <line num="8" count="38" type="stmt"/>
+      <line num="9" count="38" type="stmt"/>
+      <line num="10" count="38" type="stmt"/>
+      <line num="12" count="38" type="stmt"/>
+      <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="21" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="26" count="2" type="stmt"/>
+      <line num="32" count="23" type="cond" truecount="4" falsecount="0"/>
+      <line num="33" count="7" type="stmt"/>
+      <line num="35" count="16" type="stmt"/>
+      <line num="36" count="16" type="stmt"/>
+      <line num="37" count="15" type="stmt"/>
+      <line num="39" count="16" type="stmt"/>
+      <line num="44" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="1" type="stmt"/>
+      <line num="51" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+      <line num="55" count="3" type="stmt"/>
+      <line num="57" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="58" count="1" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="65" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="73" count="0" type="stmt"/>
+      <line num="79" count="40" type="stmt"/>
+      <line num="80" count="40" type="stmt"/>
+      <line num="84" count="1" type="stmt"/>
+      <line num="85" count="14" type="stmt"/>
+      <line num="87" count="14" type="stmt"/>
+      <line num="88" count="36" type="stmt"/>
+      <line num="91" count="14" type="stmt"/>
+      <line num="94" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -1,0 +1,10 @@
+<div id="file_upload_form">
+  <%= form_for :file_upload, url: upload_project_file_path(project_id), html: {multipart: true} do |f| %>
+    <%= f.file_field :upload, id: "file_field" %>
+    <%= f.submit t("links.upload_project_file"), id: :submit %>
+  <% end %>
+</div>
+
+<div id="file_upload_button">
+  <%= button_tag t("text.upload_file"), type: :button %>
+</div>

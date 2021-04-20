@@ -1,0 +1,49 @@
+<% @title = t("text.edit_file_ide") %>
+
+<h2><%= @title %></h2>
+
+<%= back_to_projects %>
+
+<div id="project">
+  <div id="accordion_ide">
+    <h3><%= link_to @project.name, project_path(@project) %></h3>
+
+    <div id="files">
+      <h4><%= t("links.project_files") %></h4>
+      <%= render "/project_files/list_project_files", project: @project %>
+    </div>
+  </div>
+</div>
+
+<div id="editor">
+  <div id="tabs_ide">
+    <ul>
+      <li><a href="#tabs_editor"><%= @file.name %></a></li>
+      <li><a href="#tabs_log"><%= t("text.log_ide") %></a></li>
+      <li><a href="#tabs_pdf"><%= t("text.pdf_ide") %></a></li>
+    </ul>
+
+    <div id="tabs_editor">
+      <%= form_tag(compile_file_in_ide_path(project: @project.id, file: @file.id), method: :post) do %>
+        <%= text_area_tag(:editor_content, @file_content, size: "80x25") %>
+        <br />
+        <%= submit_tag("Save") %>
+        <%= submit_tag("Compile") %>
+      <% end %>
+    </div>
+
+    <div id="tabs_log">
+      <%= text_area_tag(:log_content, @log_content, size: "80x25") %>
+    </div>
+
+    <div id="tabs_pdf">
+      <% if @project.project_summary && @project.project_summary.pdf %>
+        <%= link_to(t("links.download_pdf"), pdf_project_path(@project)) %>
+      <% else %>
+        <%= t("messages.no_pdf") %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div id="clear"></div>

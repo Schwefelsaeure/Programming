@@ -1,0 +1,20 @@
+// Place all the styles related to the ide controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#project {
+	float: left;
+	width: 50%;
+}
+#editor {
+	float: right;
+	width: 50%;
+}
+#editor_content, #log_content {
+	font-family: "Courier New", Courier, monospace;
+	font-size: small;
+	width: 100%;
+}
+#clear {
+	clear: both;
+}

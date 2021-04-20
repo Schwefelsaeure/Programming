@@ -1,0 +1,24 @@
+\documentclass{article}
+
+\usepackage[
+    sorting=nyt, % nyt | nty | nyt | nyvt | anyt | ynt | ydnt | none | debug
+    style=authoryear % numeric | alphabetic | authoryear | authortitle | verbose | draft | debug
+]{biblatex}
+\addbibresource{Literature.bib}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+See:
+\cite{oettinger-2005}
+\cite{sarova-2010}
+\cite{oracle-2015}
+
+\printbibliography
+
+\printbibliography[type=article,title=Articles]
+\printbibliography[type=book,title=Books]
+\printbibliography[type=misc,title=Misc]
+
+\end{document}

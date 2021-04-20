@@ -1,0 +1,14 @@
+<% @title = t("text.show_project") %>
+
+<h2><%= @title %></h2>
+
+<p>
+<b><%= t("activerecords.attributes.project.name") %>:</b>
+<%= @project.name %>
+</p>
+<p>
+<b><%= t("activerecords.attributes.project.description") %>:</b>
+<%= @project.description %>
+</p>
+
+<%= back_to_projects %>

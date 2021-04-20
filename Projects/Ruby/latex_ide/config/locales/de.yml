@@ -1,0 +1,9 @@
+de:
+  activerecord:
+    models:
+      project: "Projekt"
+      user: "Benutzer"
+    attributes:
+      project:
+        name: "Name"
+        description: "Beschreibung"

@@ -1,0 +1,15 @@
+<% @title = t("text.home_pages") %>
+
+<h2><%= @title %></h2>
+
+<% if user_signed_in? %>
+  <p>
+  <%= link_to t("links.your_projects"), projects_path %>
+  </p>
+<% else %>
+  <p>
+  <%= link_to t("links.sign_in_user"), login_path %>
+  or
+  <%= link_to t("links.sign_up_user"), new_user_path %>
+  </p>
+<% end %>

@@ -1,0 +1,13 @@
+// Place all the styles related to the project_files controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Place default upload form outside visible area so that the user has to use
+ * "my" upload button. This one uses the default upload form but is more robust.
+ * E.g. it's not possible to click "upload" although no file is selected.
+ */
+#file_upload_form {
+	position: fixed;
+	top: -9999px;
+	left: -9999px;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+		
+            <div class="header-left">Header (left)</div>
+            <div class="header-right">Header (right)</div>
+            <div class="footer">Footer</div>
+		
+            <div class="slides">
+                <section type="part" name="Part 1">
+                    <section title="Slide 1">
+                        <h1>My first video</h1>
+                        <video src="ModelValidation-UseCase2-PerceivedThreat-New.mp4"></video>
+                    </section>
+                    <section title="Slide 2">Slide 2</section>
+                    <section title="Slide 3">Slide 3</section>
+                    <section title="Slide 4">Slide 4</section>
+                    <section title="Slide 5">Slide 5</section>
+                    <section title="Slide 6">Slide 6</section>
+                </section>
+                <section type="part" name="Part 2">
+                    <section title="Test">Slide 1</section>
+                    <section>Slide 2</section>
+                </section>
+            </div>
+            
+        </div>
+
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/adapt_header.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				navigationMode: "linear",
+				transition: "none",
+				center: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>

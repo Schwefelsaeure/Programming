@@ -1,0 +1,32 @@
+<% @title = t("text.your_projects") %>
+
+<h2><%= @title %></h2>
+
+<p><%= link_to t("links.new_project"), new_project_path %></p>
+
+<div id="accordion_projects">
+  <% @projects.each do |project| %>
+
+    <h3><%= project.name %></h3>
+    <div>
+      <p><%= project.description %></p>
+
+      <div id="files">
+        <h4><%= t("links.project_files") %></h4>
+        <%= render "/project_files/list_project_files", project: project %>
+      </div>
+
+      <div id="options">
+        <h4><%= t("text.project_options") %></h4>
+        <ul>
+          <li><%= link_to t("links.download_project"), download_project_path(project) %></li>
+          <li><%= link_to t("links.edit_project"), edit_project_path(project) %></li>
+          <li><%= link_to t("links.delete_project"), project,
+            confirm: t("messages.confirm_delete"),
+            method: :delete %></li>
+          </ul>
+        </div>
+
+      </div>
+    <% end %>
+  </div>

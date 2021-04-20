@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+Icon=/usr/local/lib/python3.6/dist-packages/notebook/static/base/images/favicon.ico
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+Actions=launch_jupyter_notebook;
+Encoding=UTF-8
+
+[Desktop Action launch_jupyter_notebook]
+Name=Launch Jupyter here
+Name[de]=Jupyter hier starten
+Icon=/usr/local/lib/python3.6/dist-packages/notebook/static/base/images/favicon.ico
+Exec=cd %f && jupyter notebook
